@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grecu Computers</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+        }
+
+        .poster {
+            background: rgba(0,0,0,0.6);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ffd700;
+            color: black;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        #telefon {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            display: none;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO -->
+    <img src="Logo Grecu.png" class="logo">
+
+    <div class="poster">
+        <h1>Grecu Computers</h1>
+        <h2>Profesionalism • Calitate • Servicii</h2>
+
+        <p>
+            Grecu Computers este o firmă dedicată oferirii de servicii de înaltă calitate în domeniul calculatoarelor.
+            Punem accent pe seriozitate, eficiență și satisfacția clienților.
+        </p>
+
+        <p>
+            Indiferent de nevoile tale, echipa noastră este pregătită să ofere soluții rapide și sigure.
+        </p>
+
+        <div class="btn" onclick="toggleTelefon()">Contactează-ne</div>
+
+        <div id="telefon">0730 966 403</div>
+    </div>
+
+    <script>
+        function toggleTelefon() {
+            var tel = document.getElementById("telefon");
+
+            if (tel.style.display === "none" || tel.style.display === "") {
+                tel.style.display = "block";
+            } else {
+                tel.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
